@@ -1,0 +1,50 @@
+{
+  "name": "ngx-guided-tour",
+  "version": "1.1.2",
+  "description": "Guided tour for your Angular6+ applications.",
+  "peerDependencies": {
+    "@angular/common": ">=6.0.0",
+    "@angular/core": ">=6.0.0",
+    "bootstrap": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsqlabs/ngx-guided-tour.git"
+  },
+  "keywords": [
+    "guided",
+    "walkthrough",
+    "tour",
+    "angular",
+    "angular6",
+    "angular7",
+    "SASS",
+    "rxjs",
+    "customizable",
+    "ng",
+    "ngx",
+    "ng2"
+  ],
+  "author": {
+    "name": "lsqlabs",
+    "email": "developers@lsq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lsqlabs/ngx-guided-tour/issues"
+  },
+  "homepage": "https://github.com/lsqlabs/ngx-guided-tour#readme",
+  "main": "bundles/ngx-guided-tour.umd.js",
+  "module": "fesm5/ngx-guided-tour.js",
+  "es2015": "fesm2015/ngx-guided-tour.js",
+  "esm5": "esm5/ngx-guided-tour.js",
+  "esm2015": "esm2015/ngx-guided-tour.js",
+  "fesm5": "fesm5/ngx-guided-tour.js",
+  "fesm2015": "fesm2015/ngx-guided-tour.js",
+  "typings": "ngx-guided-tour.d.ts",
+  "metadata": "ngx-guided-tour.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

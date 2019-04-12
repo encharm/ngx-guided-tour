@@ -1,0 +1,32 @@
+import { ErrorHandler } from '@angular/core';
+import { Observable } from 'rxjs';
+import { GuidedTour, TourStep } from './guided-tour.constants';
+export declare class GuidedTourService {
+    errorHandler: ErrorHandler;
+    guidedTourCurrentStepStream: Observable<TourStep>;
+    guidedTourOrbShowingStream: Observable<boolean>;
+    private _guidedTourCurrentStepSubject;
+    private _guidedTourOrbShowingSubject;
+    private _currentTourStepIndex;
+    private _currentTour;
+    private _onFirstStep;
+    private _onLastStep;
+    private _onResizeMessage;
+    constructor(errorHandler: ErrorHandler);
+    nextStep(): void;
+    backStep(): void;
+    skipTour(): void;
+    resetTour(): void;
+    startTour(tour: GuidedTour): void;
+    activateOrb(): void;
+    private _setFirstAndLast;
+    private _checkSelectorValidity;
+    readonly onLastStep: boolean;
+    readonly onFirstStep: boolean;
+    readonly onResizeMessage: boolean;
+    readonly currentTourStepDisplay: number;
+    readonly currentTourStepCount: number;
+    readonly preventBackdropFromAdvancing: boolean;
+    private getPreparedTourStep;
+    private setTourOrientation;
+}
